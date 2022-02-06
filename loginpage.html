@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="loginpage-css.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="../DashboardPage/Dashboard.htm" />
+    <title>CK Banks</title>
+  </head>
+  <body>
+    <div class="full-page">
+      <div id="login-form" class="login-page">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button
+              type="button"
+              onclick="login()"
+              id="loginbtn"
+              class="toggle-btn"
+            >
+              LOGIN
+            </button>
+            <button type="button" onclick="register()" class="toggle-btn">
+              REGISTER
+            </button>
+          </div>
+          <form
+            action="../DashboardPage/Dashboard.htm"
+            id="login"
+            class="input-group-login"
+          >
+            <input
+              type="email"
+              class="input-field"
+              id="login-email"
+              placeholder="User Name"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              id="login-password"
+              placeholder="Enter Password"
+              required
+            />
+            <input type="checkbox" class="check-box" /><span class="bot1"
+              >&ensp;Remember Password</span
+            >
+            <button type="submit" id="loginpagebtn" class="submit-btn">
+              SIGN IN
+            </button>
+              <br />
+              <a class="anchor" href="../ForgotPassword_Page/forgotpage.htm">Forgot Password</a>
+           
+          </form>
+          <form id="register" class="input-group-register">
+            <input
+              type="text"
+              class="input-field"
+              id="input1"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Last Name"
+              required
+            />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email Id"
+              required
+            />
+            <!-- <input
+              type="text"
+              class="input-field"
+              placeholder="Mobile Number"
+              required
+            /> -->
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Confirm Password"
+              required
+            />
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Enter your DOB"
+              required
+            />
+            <div>
+            <input
+              type="checkbox"
+              class="check-box"
+              id="register-checkbox"
+            /><span class="bot">&ensp;I agree to the terms and conditions</span>
+            <button type="submit" class="submit-btn">SIGN UP</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+      function register() {
+        x.style.left = "-450px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+    <!-- <script>
+      var modal = documet.getElementById("login-form");
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script> -->
+  </body>
+</html>
