@@ -1,16 +1,16 @@
 # C K Bank
 Individual Project
 
-# Technologies Used
+## Technologies Used
 * HTML 
 * CSS
 * JavaScript
 
-# Tools
+## Tools
 * VS Code
 * Github
 
-# functionalities
+## functionalities
 * Signup and Login
 * Account Details
 * Transaction History
